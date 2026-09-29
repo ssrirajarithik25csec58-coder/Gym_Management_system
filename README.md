@@ -1,18 +1,24 @@
-## Getting Started
+# Gym Management System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Java Swing application for managing gym members with MySQL database integration.
 
-## Folder Structure
+## Features
+- Add / Update / Delete members
+- Search by name or phone
+- Membership plan selection
+- MySQL database backend
 
-The workspace contains two folders by default, where:
+## Tech Stack
+- Java Swing (GUI)
+- MySQL (Database)
+- JDBC (MySQL Connector/J 8.3.0)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Setup
+1. Install JDK 11+
+2. Run `database_setup.sql` in MySQL
+3. Update DB credentials in `src/gym/DBConnection.java`
+4. Compile: `javac -cp "lib/*" src/gym/*.java -d bin`
+5. Run: `java -cp "bin;lib/*" gym.GymApp`
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Author
+- ssrirajarithik25csec58-coder
